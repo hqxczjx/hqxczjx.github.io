@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[再次尝试改博客]]></title>
+    <url>%2F2017%2F06%2F10%2F%E5%86%8D%E6%AC%A1%E5%B0%9D%E8%AF%95%E6%94%B9%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[上次配置东西的时候多了个标签页，但是访问不到，这次试下能不能弄好。（第二天）好吧不知道为何那个部署会部署不到，如果是选部署地址为自己github地址的话hexo d显示success之后并没什么反应，选另一种的话直接报错。 你明明知道是在机场等一艘船，那你还在坚持什么呢？]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>随手做做</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2017%2F02%2F17%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
