@@ -88,8 +88,7 @@
 <meta name="description" content="网络学习笔记一：生成HTTP请求消息
 小知识网页打不开，QQ能上：DNS不对，QQ是直接使用IP地址来连接服务器的，可以由此判断
 
-网络是由什么组成的网络是由负责将数字信息搬运到指定目的地的机制加上浏览器和Web服务器这些网络应用程序组成的。其中数字信息指浏览器与服务器间传递的请求和响应（二进制）
-URL（同一资源定位符）http://user:password@www.lab.glasscom.">
+网络是由什么组成的网络是由负责将数字信息搬运到指定目的地的机制加上浏览器和Web服务器这些网络应用程序组成的。其中数字信息指浏览器与服务器间传递的请求和响应（二进制）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="网络学习笔记一">
 <meta property="og:url" content="http://yoursite.com/2017/08/05/网络学习笔记一/index.html">
@@ -97,16 +96,14 @@ URL（同一资源定位符）http://user:password@www.lab.glasscom.">
 <meta property="og:description" content="网络学习笔记一：生成HTTP请求消息
 小知识网页打不开，QQ能上：DNS不对，QQ是直接使用IP地址来连接服务器的，可以由此判断
 
-网络是由什么组成的网络是由负责将数字信息搬运到指定目的地的机制加上浏览器和Web服务器这些网络应用程序组成的。其中数字信息指浏览器与服务器间传递的请求和响应（二进制）
-URL（同一资源定位符）http://user:password@www.lab.glasscom.">
-<meta property="og:updated_time" content="2017-08-04T20:00:54.297Z">
+网络是由什么组成的网络是由负责将数字信息搬运到指定目的地的机制加上浏览器和Web服务器这些网络应用程序组成的。其中数字信息指浏览器与服务器间传递的请求和响应（二进制）">
+<meta property="og:updated_time" content="2017-08-04T20:23:47.220Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网络学习笔记一">
 <meta name="twitter:description" content="网络学习笔记一：生成HTTP请求消息
 小知识网页打不开，QQ能上：DNS不对，QQ是直接使用IP地址来连接服务器的，可以由此判断
 
-网络是由什么组成的网络是由负责将数字信息搬运到指定目的地的机制加上浏览器和Web服务器这些网络应用程序组成的。其中数字信息指浏览器与服务器间传递的请求和响应（二进制）
-URL（同一资源定位符）http://user:password@www.lab.glasscom.">
+网络是由什么组成的网络是由负责将数字信息搬运到指定目的地的机制加上浏览器和Web服务器这些网络应用程序组成的。其中数字信息指浏览器与服务器间传递的请求和响应（二进制）">
 
 
 
@@ -426,6 +423,7 @@ URL（同一资源定位符）http://user:password@www.lab.glasscom.">
 <p>小知识<br>网页打不开，QQ能上：DNS不对，QQ是直接使用IP地址来连接服务器的，可以由此判断</p>
 </blockquote>
 <h2 id="网络是由什么组成的"><a href="#网络是由什么组成的" class="headerlink" title="网络是由什么组成的"></a>网络是由什么组成的</h2><p>网络是由负责将数字信息搬运到指定目的地的机制加上浏览器和Web服务器这些网络应用程序组成的。其中数字信息指浏览器与服务器间传递的请求和响应（二进制）</p>
+<a id="more"></a>
 <h3 id="URL（同一资源定位符）"><a href="#URL（同一资源定位符）" class="headerlink" title="URL（同一资源定位符）"></a>URL（同一资源定位符）</h3><p><a href="http://user:password@www.lab.glasscom.com:80/dir/file.html" target="_blank" rel="external">http://user:password@www.lab.glasscom.com:80/dir/file.html</a></p>
 <table>
 <thead>
@@ -465,12 +463,17 @@ URL（同一资源定位符）http://user:password@www.lab.glasscom.">
 <table>
 <thead>
 <tr>
-<th>请求消息：</th>
-<th>&lt;方法&gt;&lt;空格&gt;&lt; URI&gt;&lt;空格&gt;&lt; HTTP版本&gt;</th>
-<th>第一行为请求行，可以大概了解请求内容</th>
+<th>信息</th>
+<th>内容</th>
+<th>备注</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>请求消息：</td>
+<td>&lt;方法&gt;&lt;空格&gt;&lt; URI&gt;&lt;空格&gt;&lt; HTTP版本&gt;</td>
+<td>第一行为请求行，可以大概了解请求内容</td>
+</tr>
 <tr>
 <td></td>
 <td>&lt;字段名&gt;:&lt;字段值&gt;</td>
@@ -497,12 +500,17 @@ URL（同一资源定位符）http://user:password@www.lab.glasscom.">
 <h3 id="2-收到响应"><a href="#2-收到响应" class="headerlink" title="2.收到响应"></a>2.收到响应</h3><table>
 <thead>
 <tr>
-<th>请求消息：</th>
-<th>&lt; HTTP版本&gt;&lt;空格&gt;&lt;状态码&gt;&lt;空格&gt;&lt;响应短语&gt;</th>
-<th>状态行，其中响应短语是用来解释状态码的短语</th>
+<th>信息</th>
+<th>内容</th>
+<th>备注</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>请求消息：</td>
+<td>&lt; HTTP版本&gt;&lt;空格&gt;&lt;状态码&gt;&lt;空格&gt;&lt;响应短语&gt;</td>
+<td>状态行，其中响应短语是用来解释状态码的短语</td>
+</tr>
 <tr>
 <td></td>
 <td>&lt;字段名&gt;:&lt;字段值&gt;</td>
