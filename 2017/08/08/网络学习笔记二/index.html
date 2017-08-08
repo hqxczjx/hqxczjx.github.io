@@ -85,25 +85,31 @@
 
 
 
-<meta name="description" content="网络学习笔记一：生成HTTP请求消息
-小知识网页打不开，QQ能上：DNS不对，QQ是直接使用IP地址来连接服务器的，可以由此判断
+<meta name="description" content="网络学习笔记二：向DNS服务器查询Web服务器的IP地址生成HTTP消息后，委托操作系统将消息发给服务器，因为发送消息功能对所有的应用程序都通用，所以可以让操作系统实现，而且浏览器也只能解析网址生成HTTP消息，本身没发消息到网络的功能。
 
-网络是由什么组成的网络是由负责将数字信息搬运到指定目的地的机制加上浏览器和Web服务器这些网络应用程序组成的。其中数字信息指浏览器与服务器间传递的请求和响应（二进制）">
+发送消息时，需要有通信对象的IP地址而不是域名，所以要根据域名找IP地址。
+
+
+简单的局域网介绍基于TCP/IP，由集线器连接的几台计算机为一个子网，如果一台">
 <meta property="og:type" content="article">
-<meta property="og:title" content="网络学习笔记一">
-<meta property="og:url" content="http://yoursite.com/2017/08/05/网络学习笔记一/index.html">
+<meta property="og:title" content="网络学习笔记二">
+<meta property="og:url" content="http://yoursite.com/2017/08/08/网络学习笔记二/index.html">
 <meta property="og:site_name" content="LoLiBoom!">
-<meta property="og:description" content="网络学习笔记一：生成HTTP请求消息
-小知识网页打不开，QQ能上：DNS不对，QQ是直接使用IP地址来连接服务器的，可以由此判断
+<meta property="og:description" content="网络学习笔记二：向DNS服务器查询Web服务器的IP地址生成HTTP消息后，委托操作系统将消息发给服务器，因为发送消息功能对所有的应用程序都通用，所以可以让操作系统实现，而且浏览器也只能解析网址生成HTTP消息，本身没发消息到网络的功能。
 
-网络是由什么组成的网络是由负责将数字信息搬运到指定目的地的机制加上浏览器和Web服务器这些网络应用程序组成的。其中数字信息指浏览器与服务器间传递的请求和响应（二进制）">
-<meta property="og:updated_time" content="2017-08-04T20:23:47.220Z">
+发送消息时，需要有通信对象的IP地址而不是域名，所以要根据域名找IP地址。
+
+
+简单的局域网介绍基于TCP/IP，由集线器连接的几台计算机为一个子网，如果一台">
+<meta property="og:updated_time" content="2017-08-08T08:53:58.326Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="网络学习笔记一">
-<meta name="twitter:description" content="网络学习笔记一：生成HTTP请求消息
-小知识网页打不开，QQ能上：DNS不对，QQ是直接使用IP地址来连接服务器的，可以由此判断
+<meta name="twitter:title" content="网络学习笔记二">
+<meta name="twitter:description" content="网络学习笔记二：向DNS服务器查询Web服务器的IP地址生成HTTP消息后，委托操作系统将消息发给服务器，因为发送消息功能对所有的应用程序都通用，所以可以让操作系统实现，而且浏览器也只能解析网址生成HTTP消息，本身没发消息到网络的功能。
 
-网络是由什么组成的网络是由负责将数字信息搬运到指定目的地的机制加上浏览器和Web服务器这些网络应用程序组成的。其中数字信息指浏览器与服务器间传递的请求和响应（二进制）">
+发送消息时，需要有通信对象的IP地址而不是域名，所以要根据域名找IP地址。
+
+
+简单的局域网介绍基于TCP/IP，由集线器连接的几台计算机为一个子网，如果一台">
 
 
 
@@ -131,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/05/网络学习笔记一/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/08/网络学习笔记二/"/>
 
 
 
 
 
-  <title> 网络学习笔记一 | LoLiBoom! </title>
+  <title> 网络学习笔记二 | LoLiBoom! </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -322,7 +328,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/05/网络学习笔记一/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/08/网络学习笔记二/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="courtier">
@@ -346,7 +352,7 @@
             
             
               
-                网络学习笔记一
+                网络学习笔记二
               
             
           </h1>
@@ -361,8 +367,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-05T03:57:44+08:00">
-                2017-08-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-08T16:53:26+08:00">
+                2017-08-08
               </time>
             
 
@@ -419,132 +425,72 @@
       
 
       
-        <h1 id="网络学习笔记一：生成HTTP请求消息"><a href="#网络学习笔记一：生成HTTP请求消息" class="headerlink" title="网络学习笔记一：生成HTTP请求消息"></a>网络学习笔记一：生成HTTP请求消息</h1><blockquote>
-<p>小知识<br>网页打不开，QQ能上：DNS不对，QQ是直接使用IP地址来连接服务器的，可以由此判断</p>
-</blockquote>
-<h2 id="网络是由什么组成的"><a href="#网络是由什么组成的" class="headerlink" title="网络是由什么组成的"></a>网络是由什么组成的</h2><p>网络是由负责将数字信息搬运到指定目的地的机制加上浏览器和Web服务器这些网络应用程序组成的。其中数字信息指浏览器与服务器间传递的请求和响应（二进制）</p>
-<a id="more"></a>
-<h3 id="URL（同一资源定位符）"><a href="#URL（同一资源定位符）" class="headerlink" title="URL（同一资源定位符）"></a>URL（同一资源定位符）</h3><p><a href="http://user:password@www.lab.glasscom.com:80/dir/file.html" target="_blank" rel="external">http://user:password@www.lab.glasscom.com:80/dir/file.html</a></p>
-<table>
-<thead>
-<tr>
-<th>http</th>
-<th>user:password@</th>
-<th>www.lab.glasscom.com</th>
-<th>:80</th>
-<th>/dir/file.html</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>浏览器应用的通信协议</td>
-<td>用户名，密码，可省略</td>
-<td>Web服务器域名</td>
-<td>端口号，默认80，可省略</td>
-<td>文件路径名</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><a href="http://www.lab.glasscom.com/dir/访问当前目录下服务器设置的默认文件名，一般为index.html，即访问http://www.lab.glasscom.com/dir/index.html" target="_blank" rel="external">http://www.lab.glasscom.com/dir/访问当前目录下服务器设置的默认文件名，一般为index.html，即访问http://www.lab.glasscom.com/dir/index.html</a></li>
-<li><a href="http://www.lab.glasscom.com/访问“/”目录下的默认文件名，“/”目录一般指根目录" target="_blank" rel="external">http://www.lab.glasscom.com/访问“/”目录下的默认文件名，“/”目录一般指根目录</a></li>
-<li><a href="http://www.lab.glasscom.com同上" target="_blank" rel="external">http://www.lab.glasscom.com同上</a></li>
-<li><a href="http://www.lab.glasscom.com/whatisthis一般来说如果服务器上有whatisthis文件则将whatisthis作为文件名处理；有这个目录则作为目录名来处理。我们无法创建两个名字相同的目录和文件（指Linux系统的统一目录下，因为Linux下一切都是文件）" target="_blank" rel="external">http://www.lab.glasscom.com/whatisthis一般来说如果服务器上有whatisthis文件则将whatisthis作为文件名处理；有这个目录则作为目录名来处理。我们无法创建两个名字相同的目录和文件（指Linux系统的统一目录下，因为Linux下一切都是文件）</a></li>
-</ul>
-<h3 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h3><p>HTTP协议定义了客户端和服务器之间交互的消息内容和步骤。<br>客户端向服务器发送请求消息，消息包含“对什么目标”和“进行怎样的操作”。“对什么目标”为URI（统一资源标识符），即各种访问的目标，如各种文件名（/dir/file.html）或http:开头的URL；“进行怎样的操作”为方法，表示需要Web服务器完成怎样的工作，如GET，POST，PUT，HEAD，DELETE等都是方法。</p>
-<p>收到请求消息后，服务器通过URI和方法来完成自己的工作，再把结果存在响应消息中，响应的开头有个状态码用来表示操作的执行结果，如200，404，500，503。客户端收到响应后从消息中读出所需数据显示在屏幕上。</p>
-<p>请求的方法：</p>
-<ol>
-<li>GET：一般访问服务器获取网页数据就是用GET方法。请求消息中写上GET方法，URI写上存放网页数据的文件名“/dir/file.html”表示要获取该文件的数据，然后将读取到的数据存在响应消息中并返回给客户端，客户端收到并显示出来。</li>
-<li>POST：在表单中填写数据，使用POST方法比较多，URI指向服务器中一个应用程序的文件名如index.php，再加上要传递的数据data，一般为表单内容，服务器收到处理后放入响应返回客户端。</li>
-</ol>
-<hr>
-<h2 id="请求与响应"><a href="#请求与响应" class="headerlink" title="请求与响应"></a>请求与响应</h2><h3 id="1-生成HTTP请求消息："><a href="#1-生成HTTP请求消息：" class="headerlink" title="1.生成HTTP请求消息："></a>1.生成HTTP请求消息：</h3><p>解析完URL，确定了Web服务器和文件名，然后生成HTTP请求消息，有严格规定的格式</p>
-<table>
-<thead>
-<tr>
-<th>信息</th>
-<th>内容</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>请求消息：</td>
-<td>&lt;方法&gt;&lt;空格&gt;&lt; URI&gt;&lt;空格&gt;&lt; HTTP版本&gt;</td>
-<td>第一行为请求行，可以大概了解请求内容</td>
-</tr>
-<tr>
-<td></td>
-<td>&lt;字段名&gt;:&lt;字段值&gt;</td>
-<td>消息头，每行包含一个头字段，用于表示请求的附加消息，可以有多行</td>
-</tr>
-<tr>
-<td></td>
-<td>……</td>
-<td>……</td>
-</tr>
-<tr>
-<td></td>
-<td>&lt;空行&gt;</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>&lt;消息体&gt;</td>
-<td>包含客户端向服务器发送的数据如POST方法的表单数据</td>
-</tr>
-</tbody>
-</table>
-<p>GET方法发送的数据最多为几百个字节</p>
-<h3 id="2-收到响应"><a href="#2-收到响应" class="headerlink" title="2.收到响应"></a>2.收到响应</h3><table>
-<thead>
-<tr>
-<th>信息</th>
-<th>内容</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>请求消息：</td>
-<td>&lt; HTTP版本&gt;&lt;空格&gt;&lt;状态码&gt;&lt;空格&gt;&lt;响应短语&gt;</td>
-<td>状态行，其中响应短语是用来解释状态码的短语</td>
-</tr>
-<tr>
-<td></td>
-<td>&lt;字段名&gt;:&lt;字段值&gt;</td>
-<td>消息头</td>
-</tr>
-<tr>
-<td></td>
-<td>……</td>
-<td>……</td>
-</tr>
-<tr>
-<td></td>
-<td>&lt;空行&gt;</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>&lt;消息体&gt;</td>
-<td>包含服务器向客户端发送的数据，消息体的内容格式由消息头中的Content-Type字段定义</td>
-</tr>
-</tbody>
-</table>
-<p>响应消息格式如上，状态码和响应短语是一一对应的，用来表示请求的结果，状态码是数字，主要用来告知程序结果；响应短语是文字，主要用来向人们告知结果。</p>
+        <h1 id="网络学习笔记二：向DNS服务器查询Web服务器的IP地址"><a href="#网络学习笔记二：向DNS服务器查询Web服务器的IP地址" class="headerlink" title="网络学习笔记二：向DNS服务器查询Web服务器的IP地址"></a>网络学习笔记二：向DNS服务器查询Web服务器的IP地址</h1><p>生成HTTP消息后，委托操作系统将消息发给服务器，因为发送消息功能对所有的应用程序都通用，所以可以让操作系统实现，而且浏览器也只能解析网址生成HTTP消息，本身没发消息到网络的功能。</p>
 <blockquote>
-<p>状态码第一位数字为状态类型，二、三位为具体情况</p>
-<ul>
-<li>1XX:告知请求的处理进度和情况</li>
-<li>2XX:成功</li>
-<li>3xx:表示需要进一步操作</li>
-<li>4xx:客户端错误</li>
-<li>5XX:服务器错误</li>
-</ul>
+<p>发送消息时，需要有通信对象的IP地址而不是域名，所以要根据域名找IP地址。</p>
 </blockquote>
-<p>返回响应消息后，如果网页内容只有文字，浏览器会把数据提取并显示在屏幕上；如果有图片等资源，则会在网页响应位置嵌入一个如<code>&lt;img src=&quot;...&quot;&gt;</code>的标签的控制信息，当浏览器显示文字时遇到这些标签，则在屏幕上留个位置出来，然后再次访问服务器，按照src中的文件名向服务器发送请求获取图片并显示到响应位置，这个请求与获取网页文件方式一样，只是URI部分改为src的。但由于每条请求消息只能写一个URI，所以每次只能获取1个文件，如果要获取多个文件就要发多几次请求，如一个网页有3张图片，则一共要发4次请求给服务器才能显示网页和图片，而这些工作全是浏览器负责的，服务器只负责对每一条请求返回一条响应。</p>
+<hr>
+<h2 id="简单的局域网介绍"><a href="#简单的局域网介绍" class="headerlink" title="简单的局域网介绍"></a>简单的局域网介绍</h2><p>基于TCP/IP，由集线器连接的几台计算机为一个子网，如果一台集线器连接不了那么多则增加集线器并把集线器互相连接起来，由这些子网通过路由器连接起来就是一个网络。<em>一般家里的路由器都内置了集线器功能。</em></p>
+<h2 id="消息发送流程"><a href="#消息发送流程" class="headerlink" title="消息发送流程"></a>消息发送流程</h2><p>消息经过子网的集线器到达离发送者最近的路由器上，再根据消息的目的地判断下一个路由的位置，再发送出去下一个路由器，重复这些过程知道传到目的地。</p>
+<h2 id="IP地址表示方法"><a href="#IP地址表示方法" class="headerlink" title="IP地址表示方法"></a>IP地址表示方法</h2><blockquote>
+<p>一串32比特（bit）的数字，按照8比特（1字节即1Byte）一组分成4组用十进制表示再用圆点隔开。</p>
+</blockquote>
+<p>IP地址主体：192.168.1.1</p>
+<p>IP地址/子网掩码：192.168.1.1/255.255.255.0</p>
+<p>用网络号比特数表示子网掩码：192.168.1.1/24（24表示在二进制中有24个连续的1，255表示8个1的值，子网掩码一般为24，如果是其他例如25则是255.255.255.128，128是10000000）</p>
+<p>表示整个子网：192.168.1.0/24 主机号全为0</p>
+<p>表示子网内广播的地址：192.168.1.255/24 主机号全为1，表示对整个子网进行广播，即向子网上所有设备发包。</p>
+<blockquote>
+<p>子网掩码：左边全为1右边全为0，1部分表示网络号，0为主机号。</p>
+</blockquote>
+<hr>
+<h2 id="域名与IP并用的理由"><a href="#域名与IP并用的理由" class="headerlink" title="域名与IP并用的理由"></a>域名与IP并用的理由</h2><ul>
+<li>光用IP：难记，域名比较好记。</li>
+<li>光用域名（Windows网络的原型PC-Networks实现过）：运行效率不高，IP地址长度为32比特（4字节），域名最短也要几十个字节，而且长度不固定，传送、处理数据就要更长时间，就算技术发展得快以后路由器性能会提升，数据量也会变大，所以也不适合。</li>
+</ul>
+<h2 id="查询IP地址"><a href="#查询IP地址" class="headerlink" title="查询IP地址"></a>查询IP地址</h2><p>询问最近的DNS服务器：“XXX域名的IP是多少”，通过DNS查询IP地址叫域名解析，负责解析的为<strong>解析器</strong>，解析器是一段运行在计算机上的程序，包含在操作系统的Socket库中。</p>
+<p>调用解析器后，解析器会向DNS服务器发送查询消息，然后DNS服务器返回响应消息，其中包含查到的IP地址，解析器取出IP地址写入浏览器指定的内存地址中，这样就完成了IP地址的查询。当浏览器向Web服务器发消息时，就从该内存地址取出IP并与HTTP请求消息一起交给操作系统就行了。</p>
+<blockquote>
+<p>HTTP消息是用文本编写的，DNS消息是用二进制数据编写的。</p>
+</blockquote>
+<h2 id="调用解析器的工作流程"><a href="#调用解析器的工作流程" class="headerlink" title="调用解析器的工作流程"></a>调用解析器的工作流程</h2><ul>
+<li>浏览器执行调用解析器指令。</li>
+<li>Socket库中的解析器生成给DNS服务器的查询消息，交给操作系统内部协议栈。</li>
+<li>操作系统内部协议栈发送UDP消息（因为解析器也没使用网络收发数据的功能，协议栈为TCP/IP驱动）</li>
+<li>消息从网卡发到DNS服务器，处理完后再从网卡返回到协议栈。</li>
+<li>协议栈接收DNS服务器的响应消息传给解析器。</li>
+<li>Socket库中的解析器接收传过来的响应消息，从响应中取出IP地址存放在浏览器置顶的内存地址上。</li>
+<li>浏览器取出IP地址执行之后的操作。</li>
+</ul>
+<blockquote>
+<p>DNS服务器接收来自客户端的查询消息包括以下3种：域名（服务器名称、邮件服务器即@后面部分的名称）；Class，固定为IN（当初设计用来识别互联网外的网络，不过现在没其他网络了）；记录类型，A为域名对应的IP地址，MX为域名对应邮件服务器，CNAME为查询域名相关别名（关联在一起的其他域名），对不同的记录类型返回的响应数据也不一样。</p>
+</blockquote>
+<hr>
+<h2 id="域名层次结构"><a href="#域名层次结构" class="headerlink" title="域名层次结构"></a>域名层次结构</h2><p>最顶级为根域DNS服务器，分配给根域DNS服务器的IP全世界只有13个，不过因为它在运营上是用堕胎服务器对应一个IP地址的，所以服务器的数量还是很多。根域一般忽略不写，不然就要在域名最后加一个圆点像www.baidu.com.</p>
+<p>根域里存放着像com，jp之类的顶级域的DNS服务器信息，这些顶级域又存放着下一级DNS服务器的信息如baidu，这样根据圆点来分割从后往前逐级递减。</p>
+<h2 id="查找响应DNS服务器并获取IP地址"><a href="#查找响应DNS服务器并获取IP地址" class="headerlink" title="查找响应DNS服务器并获取IP地址"></a>查找响应DNS服务器并获取IP地址</h2><p>假设一个服务器只有一个域，计算机先找到最近的DNS服务器，没找到该域名的信息则从根域的DNS服务器找，根域的DNS服务器没找到这个域名的信息，不过判断出这个域名属于com域的，所以返回它所管理的com域的IP地址；然后最近的DNS服务器再查找com域的DNS服务器，没找到不过判断出是属于它管理的XXX域，所以返回XXX域的IP地址；然后最近的DNS服务器再找XXX域的DNS服务器…以此类推直到找到目标的的DNS服务器，然后发送查询信息就能得到这个域名的IP地址。</p>
+<p>一般一个服务器会有多个域，所以会减少很多步的查找，而且DNS服务器会缓存起查找过的域名，一旦要查找会先检查缓存中有无保存该域名的相关信息，有就直接返回响应，没有再逐层去查找。</p>
+<hr>
+<h2 id="委托协议栈发送消息"><a href="#委托协议栈发送消息" class="headerlink" title="委托协议栈发送消息"></a>委托协议栈发送消息</h2><p>知道IP地址后就可以委托协议栈向向这个IP地址，即Web服务器发HTTP消息了。</p>
+<blockquote>
+<p>HTTP消息都是数字消息，收发数字消息和通过DNS查询IP对所有网络应用程序都通用。</p>
+</blockquote>
+<p>委托协议栈收发数据要按顺序调用多个Socket库中的组件，操作大概为：</p>
+<ol>
+<li><p>创建套接字，就是在收发数据的两台计算机上建立数据出入口。</p>
+</li>
+<li><p>将类似管道的东西连接到服务器端的套接字上，因为一般都是服务器先创建然后等客户端连接上来，这样就完成了连接。（管道就是一条数据通路，为了好理解叫管道，建立管道的关键是两端都有数据出入口即套接字，把套接字连起来就形成管道了）</p>
+</li>
+<li><p>收发数据，连接成功后就可以在管道中双向传输数据。</p>
+</li>
+<li><p>断开管道并删除套接字，收发数据结束后由任一方发起断开连接，断开后套接字也会删除，通信结束。</p>
+</li>
+</ol>
+<p>下面是详细一点的过程</p>
+<h3 id="创建套接字"><a href="#创建套接字" class="headerlink" title="创建套接字"></a>创建套接字</h3><p>调用Socket库中socket组件返回一个识别不同套接字的描述符（计算机会同时进行多个数据通信，用不同的套接字），相当于寄存行李时的号码牌对应你的行李。</p>
+<h3 id="连接阶段"><a href="#连接阶段" class="headerlink" title="连接阶段"></a>连接阶段</h3><p>调用Socket库的connect组件，需要指定描述符，服务器IP和端口号（描述符是指明使用哪个应用程序进行通信，服务器不知道这个值，所以要IP地址和端口号识别是哪台计算机）</p>
+<h3 id="通信阶段"><a href="#通信阶段" class="headerlink" title="通信阶段"></a>通信阶段</h3><p>调用Socket库的write组件，需要指定描述符和发送的数据，然后发到服务器，再用read组件把响应消息放到接收缓冲区中（应用程序内的一块内存空间）</p>
+<h3 id="断开阶段"><a href="#断开阶段" class="headerlink" title="断开阶段"></a>断开阶段</h3><p>调用Socket库的close组件，当所有数据请求完成后触发close</p>
 
       
     </div>
@@ -581,8 +527,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/10/再次尝试改博客/" rel="next" title="再次尝试改博客">
-                <i class="fa fa-chevron-left"></i> 再次尝试改博客
+              <a href="/2017/08/07/每个人都会死但我不会！（误）/" rel="next" title="每个人都会死但我不会！（误）">
+                <i class="fa fa-chevron-left"></i> 每个人都会死但我不会！（误）
               </a>
             
           </div>
@@ -590,10 +536,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/07/每个人都会死但我不会！（误）/" rel="prev" title="每个人都会死但我不会！（误）">
-                每个人都会死但我不会！（误） <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -755,7 +697,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#网络学习笔记一：生成HTTP请求消息"><span class="nav-number">1.</span> <span class="nav-text">网络学习笔记一：生成HTTP请求消息</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#网络是由什么组成的"><span class="nav-number">1.1.</span> <span class="nav-text">网络是由什么组成的</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#URL（同一资源定位符）"><span class="nav-number">1.1.1.</span> <span class="nav-text">URL（同一资源定位符）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP"><span class="nav-number">1.1.2.</span> <span class="nav-text">HTTP</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#请求与响应"><span class="nav-number">1.2.</span> <span class="nav-text">请求与响应</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-生成HTTP请求消息："><span class="nav-number">1.2.1.</span> <span class="nav-text">1.生成HTTP请求消息：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-收到响应"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.收到响应</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#网络学习笔记二：向DNS服务器查询Web服务器的IP地址"><span class="nav-number">1.</span> <span class="nav-text">网络学习笔记二：向DNS服务器查询Web服务器的IP地址</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简单的局域网介绍"><span class="nav-number">1.1.</span> <span class="nav-text">简单的局域网介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#消息发送流程"><span class="nav-number">1.2.</span> <span class="nav-text">消息发送流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IP地址表示方法"><span class="nav-number">1.3.</span> <span class="nav-text">IP地址表示方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#域名与IP并用的理由"><span class="nav-number">1.4.</span> <span class="nav-text">域名与IP并用的理由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查询IP地址"><span class="nav-number">1.5.</span> <span class="nav-text">查询IP地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调用解析器的工作流程"><span class="nav-number">1.6.</span> <span class="nav-text">调用解析器的工作流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#域名层次结构"><span class="nav-number">1.7.</span> <span class="nav-text">域名层次结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查找响应DNS服务器并获取IP地址"><span class="nav-number">1.8.</span> <span class="nav-text">查找响应DNS服务器并获取IP地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#委托协议栈发送消息"><span class="nav-number">1.9.</span> <span class="nav-text">委托协议栈发送消息</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建套接字"><span class="nav-number">1.9.1.</span> <span class="nav-text">创建套接字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#连接阶段"><span class="nav-number">1.9.2.</span> <span class="nav-text">连接阶段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通信阶段"><span class="nav-number">1.9.3.</span> <span class="nav-text">通信阶段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#断开阶段"><span class="nav-number">1.9.4.</span> <span class="nav-text">断开阶段</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
