@@ -87,29 +87,20 @@
 
 <meta name="description" content="网络学习笔记二：向DNS服务器查询Web服务器的IP地址生成HTTP消息后，委托操作系统将消息发给服务器，因为发送消息功能对所有的应用程序都通用，所以可以让操作系统实现，而且浏览器也只能解析网址生成HTTP消息，本身没发消息到网络的功能。
 
-发送消息时，需要有通信对象的IP地址而不是域名，所以要根据域名找IP地址。
-
-
-简单的局域网介绍基于TCP/IP，由集线器连接的几台计算机为一个子网，如果一台">
+发送消息时，需要有通信对象的IP地址而不是域名，所以要根据域名找IP地址。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="网络学习笔记二">
 <meta property="og:url" content="http://yoursite.com/2017/08/08/网络学习笔记二/index.html">
 <meta property="og:site_name" content="LoLiBoom!">
 <meta property="og:description" content="网络学习笔记二：向DNS服务器查询Web服务器的IP地址生成HTTP消息后，委托操作系统将消息发给服务器，因为发送消息功能对所有的应用程序都通用，所以可以让操作系统实现，而且浏览器也只能解析网址生成HTTP消息，本身没发消息到网络的功能。
 
-发送消息时，需要有通信对象的IP地址而不是域名，所以要根据域名找IP地址。
-
-
-简单的局域网介绍基于TCP/IP，由集线器连接的几台计算机为一个子网，如果一台">
-<meta property="og:updated_time" content="2017-08-08T08:53:58.326Z">
+发送消息时，需要有通信对象的IP地址而不是域名，所以要根据域名找IP地址。">
+<meta property="og:updated_time" content="2017-08-08T08:56:18.928Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网络学习笔记二">
 <meta name="twitter:description" content="网络学习笔记二：向DNS服务器查询Web服务器的IP地址生成HTTP消息后，委托操作系统将消息发给服务器，因为发送消息功能对所有的应用程序都通用，所以可以让操作系统实现，而且浏览器也只能解析网址生成HTTP消息，本身没发消息到网络的功能。
 
-发送消息时，需要有通信对象的IP地址而不是域名，所以要根据域名找IP地址。
-
-
-简单的局域网介绍基于TCP/IP，由集线器连接的几台计算机为一个子网，如果一台">
+发送消息时，需要有通信对象的IP地址而不是域名，所以要根据域名找IP地址。">
 
 
 
@@ -429,6 +420,7 @@
 <blockquote>
 <p>发送消息时，需要有通信对象的IP地址而不是域名，所以要根据域名找IP地址。</p>
 </blockquote>
+<a id="more"></a>
 <hr>
 <h2 id="简单的局域网介绍"><a href="#简单的局域网介绍" class="headerlink" title="简单的局域网介绍"></a>简单的局域网介绍</h2><p>基于TCP/IP，由集线器连接的几台计算机为一个子网，如果一台集线器连接不了那么多则增加集线器并把集线器互相连接起来，由这些子网通过路由器连接起来就是一个网络。<em>一般家里的路由器都内置了集线器功能。</em></p>
 <h2 id="消息发送流程"><a href="#消息发送流程" class="headerlink" title="消息发送流程"></a>消息发送流程</h2><p>消息经过子网的集线器到达离发送者最近的路由器上，再根据消息的目的地判断下一个路由的位置，再发送出去下一个路由器，重复这些过程知道传到目的地。</p>
